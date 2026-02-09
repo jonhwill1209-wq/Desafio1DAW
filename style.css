@@ -1,0 +1,127 @@
+/* --- ESTILOS GENERALES --- */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background-color: #0b1014; /* Azul oscuro profundo */
+    color: #e0e0e0; 
+}
+
+/* --- HEADER Y BANNER --- */
+.header-principal {
+    position: relative;
+    width: 100%;
+    height: 350px; /* Un poco más alto para lucir el banner */
+    overflow: hidden;
+    background-color: #000; /* Fondo negro */
+}
+
+.banner-header {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7; /* para que el texto resalte más */
+}
+
+.contenido-banner, .contenido-banner2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    width: 90%;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1), 0px 0px 5px rgba(0,0,0,0.8);
+    font-weight: bold;
+    margin: 0;
+}
+
+.contenido-banner {
+    top: 45%;
+    font-size: 3.5rem; 
+    text-transform: uppercase;
+    color: #c9a35d; /* Dorado para el título principal */
+}
+
+.contenido-banner2 {
+    top: 65%;
+    font-size: 1.5rem;
+}
+
+/* --- GRID DE ARTÍCULOS --- */
+.contenedor-principal-home {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.fila-articulos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.articulo-card {
+    background-color: #161d23; /* Azul grisáceo oscuro */
+    border: 1px solid #2a343d;
+    padding: 0 0 20px 0; 
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    text-align: center;
+    overflow: hidden; /* Importante para que la imagen respete las esquinas redondeadas */
+    transition: transform 0.3s ease;
+}
+
+.articulo-card:hover {
+    transform: translateY(-10px); /* Efecto de levitación al pasar el mouse */
+    border-color: #c9a35d;
+}
+
+.articulo-card h2 {
+    color: #c9a35d;
+    padding: 0 15px;
+    font-size: 1.4rem;
+}
+
+.articulo-card p {
+    padding: 0 20px;
+    font-size: 0.95rem;
+    color: #bbb;
+}
+
+.img-preview {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+/* --- BOTONES --- */
+.boton-aprender {
+    display: inline-block;
+    background-color: #c9a35d;
+    color: #0b1014;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton-aprender:hover {
+    background-color: #f1c40f;
+    box-shadow: 0 0 15px rgba(201, 163, 93, 0.4);
+}
+
+/* --- FOOTER --- */
+.footer-general {
+    background-color: #050709;
+    color: #777;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 1px solid #2a343d;
+}

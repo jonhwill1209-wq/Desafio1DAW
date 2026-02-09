@@ -1,0 +1,133 @@
+/* --- ESTILOS DE LA PÁGINA DE HÉCATE --- */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background-color: #0b1014; /* Fondo oscuro */
+    color: #e0e0e0;
+}
+
+/* --- HEADER Y BANNER --- */
+.header-principal {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.banner-header {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.contenido-banner, .contenido-banner2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    width: 100%;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 1);
+    font-weight: bold;
+}
+
+.contenido-banner { top: 45%; font-size: 3rem; text-transform: uppercase; color: #c9a35d; }
+.contenido-banner2 { top: 65%; font-size: 1.5rem; }
+
+/* --- CONTENEDOR FLEX --- */
+.contenedor-detalle-flex {
+    display: flex;
+    max-width: 1100px;
+    margin: 30px auto;
+    gap: 25px;
+    padding: 0 15px;
+}
+
+/* --- COLUMNA PRINCIPAL (FONDO CLARO / TEXTO NEGRO) --- */
+.contenido-principal {
+    flex: 3;
+    background-color: #e0e0e0; /* Gris muy claro  */
+    padding: 30px;
+    border-radius: 8px;
+    color: #000000; /* TEXTO NEGRO SÓLIDO */
+}
+
+.titulo-guia {
+    color: #0b1014;
+    margin-top: 0;
+    border-bottom: 2px solid #c9a35d;
+    padding-bottom: 10px;
+}
+
+.img-articulo-grande {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.texto-articulo h3 {
+    color: #1a1a1a;
+    margin-top: 25px;
+}
+
+.texto-articulo p, .texto-articulo li {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    color: #000000 !important; /* Forzamos el negro puro */
+}
+
+/* --- BARRA LATERAL --- */
+.barra-lateral {
+    flex: 1;
+}
+
+.boton-volver {
+    display: block;
+    text-align: center;
+    background-color: #c9a35d;
+    color: #0b1014;
+    text-decoration: none;
+    padding: 15px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.boton-volver:hover {
+    background-color: #f1c40f;
+}
+
+.img-mini {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #c9a35d;
+    transition: 0.3s;
+}
+
+.img-mini:hover {
+    filter: brightness(1.2);
+}
+
+/* --- FOOTER --- */
+.footer-general {
+    background-color: #050709;
+    color: #777;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+    border-top: 1px solid #2a343d;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contenedor-detalle-flex {
+        flex-direction: column;
+    }
+}
