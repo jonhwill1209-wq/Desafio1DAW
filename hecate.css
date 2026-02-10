@@ -33,7 +33,7 @@ body {
 }
 
 .contenido-banner { 
-    top: 45%; 
+    top: 35%; 
     font-size: 3rem; 
     text-transform: 
     uppercase; 
@@ -143,3 +143,4 @@ body {
     }
 
 }
+
