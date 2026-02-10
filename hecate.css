@@ -41,9 +41,8 @@ body {
 }
 
 .contenido-banner2 { 
-    top: 75%; 
-    font-size: 
-        1.5rem; 
+    top: 85%; 
+    font-size: 1.5rem; 
 }
 
 /* --- CONTENEDOR FLEX --- */
@@ -143,4 +142,5 @@ body {
     }
 
 }
+
 
